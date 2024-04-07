@@ -1,4 +1,14 @@
-/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
 body {
     background:url('image/imageMain.jpg');
     min-height: 50vh;
@@ -8,66 +18,47 @@ body {
     background-position: 50% 30%;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;  /* Choose a preferred font family */
+    font-family: sans-serif;
 }
-
 a {
-  text-decoration: none;
-  color: inherit;  /* Inherit color from parent elements */
+    text-decoration: none;
+    color: inherit;
 }
-
 img {
-  max-width: 100%;  /* Scale images proportionally */
+    max-width: 100%;
 }
-
-/* Header Styles */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  background-color: #f0f0f0;  /* Light background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
 }
-
 .icon {
-  width: 64px;  /* Adjust icon size as needed */
+  width: 64px;
   height: 64px;
 }
-
-/* Navigation Styles */
 .navbar {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar a {
-  padding: 0 1rem;
-  color: #333;  /* Darker text color */
+    display: block;
+    padding: 0 1rem;
+    color: #333;
 }
 
 .navbar a:hover {
-  background-color: #ddd;  /* Hover effect */
+  background-color: #ddd;
   cursor: pointer;
 }
 
-/* Dropdown Positioning */
-nav ul {
-    display: none;  /* Initially hide the dropdown list */
-    position: absolute;  /* Position the list absolutely */
-    background-color: #f0f0f0;  /* Background color */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    right: 0;  /* Reset left positioning */
-    top: 10%;  /* Positioned below the link */
-    z-index: 1;  /* Ensure the dropdown appears above other elements */
-}
-
 nav:hover ul {
-    display: block;  /* Show the dropdown on hover */
-    /* Left: 50%; Transform: translateX(-50%); */  /* Remove horizontal centering */
+    display: block;
+
 }
 
 nav ul li {
@@ -79,55 +70,64 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ddd;  /* Hover effect for dropdown items */
+    background-color: #ddd;
+}
+header input{
+    display: none;
 }
 
-/* Responsive Layout */
+header label{
+    font-size:2rem;
+    color: black;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
 @media (max-width: 768px) {
     header {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 1rem 0;  /* Adjust padding for mobile */
+        padding: 1rem 1rem;
     }
 
-    .icon {
-        margin-bottom: 1rem;  /* Add margin below icon for mobile */
+    header label{
+        visibility: visible;
+        opacity: 1;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;  /* Full width for mobile */
-        background-color: #fff;  /* White background for mobile */
-        border: 1px solid #ddd;  /* Add a border for mobile */
-        margin-bottom: 1rem;  /* Add margin below nav for mobile */
+    .navbar{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+        transform-origin: top;
+        transform: scale(0);
+        opacity: 0;
+    }
+    .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+    }
+    header input:checked ~ .navbar{
+        transform: scale(1);
+        opacity: 1
     }
 
-    nav a {
-        padding: 0.5rem 1rem;
-        width: 100%;  /* Full width links for mobile */
-        text-align: center;  /* Center text for mobile */
-        margin-bottom: 0.5rem;  /* Add margin between links for mobile */
-    }
-
-    nav a:first-child {  /* Style the first link (username) */
-        margin-top: 0;  /* Remove top margin for first link */
-    }
-
-    nav ul {
-        position: static;  /* Make the dropdown static for mobile */
-        width: 100%;  /* Full width for mobile */
-        display: block;  /* Always show the dropdown */
-        background-color: #fff;  /* White background for mobile */
-        border: 1px solid #ddd;  /* Add a border for mobile */
+    nav a:first-child {
+        margin-top: 0;
     }
 
     nav ul li {
-        display: block;  /* Arrange items vertically */
-        width: 100%;  /* Full width for mobile */
-        text-align: center;  /* Center text for mobile */
-        padding: 0.5rem;  /* Adjust padding for mobile */
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
     }
+
 }

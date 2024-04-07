@@ -51,7 +51,7 @@ def login():
             return redirect(url_for('custom'))
         else:
             print("NO")
-    return render_template('indexLogin.html')
+    return render_template('Login.html')
 
 
 @app.route("/Registration", methods=['POST', 'GET'])
@@ -64,12 +64,12 @@ def registration():
             create_user(request.form['username'], request.form['surname'], request.form['password1'],
                         request.form['email'], request.form['number'], 'male')
             return redirect(url_for('login'))
-    return render_template('indexRegistration.html', error=error)
+    return render_template('Registration.html', error=error)
 
 
 @app.route("/RequestPassword", methods=['POST', 'GET'])
 def requestPassword():
-    return render_template('indexRequestPassword.html')
+    return render_template('RequestPassword.html')
 
 
 if __name__ == "__main__":
