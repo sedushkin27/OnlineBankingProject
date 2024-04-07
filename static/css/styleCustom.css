@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background:url('image/imageMain.jpg');
+    min-height: 50vh;
+    max-height: 200vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 30%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;  /* Choose a preferred font family */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;  /* Inherit color from parent elements */
+}
+
+img {
+  max-width: 100%;  /* Scale images proportionally */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #f0f0f0;  /* Light background */
+}
+
+.icon {
+  width: 64px;  /* Adjust icon size as needed */
+  height: 64px;
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  padding: 0 1rem;
+  color: #333;  /* Darker text color */
+}
+
+.navbar a:hover {
+  background-color: #ddd;  /* Hover effect */
+  cursor: pointer;
+}
+
+/* Dropdown Positioning */
+nav ul {
+    display: none;  /* Initially hide the dropdown list */
+    position: absolute;  /* Position the list absolutely */
+    background-color: #f0f0f0;  /* Background color */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    right: 0;  /* Reset left positioning */
+    top: 10%;  /* Positioned below the link */
+    z-index: 1;  /* Ensure the dropdown appears above other elements */
+}
+
+nav:hover ul {
+    display: block;  /* Show the dropdown on hover */
+    /* Left: 50%; Transform: translateX(-50%); */  /* Remove horizontal centering */
+}
+
+nav ul li {
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;  /* Hover effect for dropdown items */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;  /* Adjust padding for mobile */
+    }
+
+    .icon {
+        margin-bottom: 1rem;  /* Add margin below icon for mobile */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;  /* Full width for mobile */
+        background-color: #fff;  /* White background for mobile */
+        border: 1px solid #ddd;  /* Add a border for mobile */
+        margin-bottom: 1rem;  /* Add margin below nav for mobile */
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        width: 100%;  /* Full width links for mobile */
+        text-align: center;  /* Center text for mobile */
+        margin-bottom: 0.5rem;  /* Add margin between links for mobile */
+    }
+
+    nav a:first-child {  /* Style the first link (username) */
+        margin-top: 0;  /* Remove top margin for first link */
+    }
+
+    nav ul {
+        position: static;  /* Make the dropdown static for mobile */
+        width: 100%;  /* Full width for mobile */
+        display: block;  /* Always show the dropdown */
+        background-color: #fff;  /* White background for mobile */
+        border: 1px solid #ddd;  /* Add a border for mobile */
+    }
+
+    nav ul li {
+        display: block;  /* Arrange items vertically */
+        width: 100%;  /* Full width for mobile */
+        text-align: center;  /* Center text for mobile */
+        padding: 0.5rem;  /* Adjust padding for mobile */
+    }
+}
