@@ -12,7 +12,8 @@
         <input type="checkbox" name="menu" id="menu">
 
         <nav class="navbar">
-            <a href="#">Wallet</a>
+            <a href="/Custom"><img class="icon" src="{{ url_for('static', filename='image/icon.png') }}">Home</a>
+            <a href="/Custom/Wallets">Wallet</a>
             <a href="#">Payment history</a>
             <a href="#">Support</a>
         </nav>
@@ -21,7 +22,7 @@
 
         <nav>
             <a href="#">
-                {{username}}<img class="icon" src="{{ url_for('static', filename='image/icon.png') }}">
+                {{username}}<img class="icon_user" src="{{ url_for('static', filename='image/icon.png') }}">
             </a>
 
             <ul class="dropdown-menu">
@@ -31,7 +32,8 @@
             </ul>
         </nav>
     </header>
-    <div>
+
+    <div class="bank_card_block">
         {%block content%}{%endblock%}
     </div>
 </body>

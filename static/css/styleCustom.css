@@ -8,7 +8,6 @@
     list-style: none;
     text-transform: capitalize;
 }
-
 body {
     background:url('image/imageMain.jpg');
     min-height: 50vh;
@@ -39,43 +38,39 @@ header {
   width: 64px;
   height: 64px;
 }
+.icon_user{
+    width: 64px;
+    height: 64px;
+}
 .navbar {
     left: 0;
     padding: 0;
     margin: 0;
 }
-
 .navbar a {
     display: block;
     padding: 0 1rem;
     color: #333;
 }
-
 .navbar a:hover {
   background-color: #ddd;
   cursor: pointer;
 }
-
 nav:hover ul {
     display: block;
-
 }
-
 nav ul li {
     padding: 0.5rem 1rem;
 }
-
 nav ul li a {
     color: #333;
 }
-
 nav ul li a:hover {
     background-color: #ddd;
 }
 header input{
     display: none;
 }
-
 header label{
     font-size:2rem;
     color: black;
@@ -83,6 +78,67 @@ header label{
     visibility: hidden;
     opacity: 0;
 }
+
+.bank_card_block{
+    display: block;
+    background-color: #f0f0f0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .2);
+    max-width: 80%;
+    min-height: 800px;
+    margin: 1% 10%;
+}
+.bank_card_block h1{
+    font-size: 36px;
+    margin: 10px 0px;
+}
+.bank_card_block p{
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.bank_card_block img{
+    text-align: center;
+}
+
+.Block_cart{
+    text-align: center;
+    margin: 10px 10px;
+    display: flex;
+    white: 60px;
+    height: 60px;
+    border: black;
+    border-radius: 10px;
+}
+
+.interface{
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+}
+.interface input[type='submit']{
+    display: none;
+}
+.interface label{
+    font-size:2rem;
+    color: black;
+    cursor: pointer;
+}
+.interface select{
+    height: 30px;
+}
+.interface_down{
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color:#f0f0f0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+}
+
 
 @media (max-width: 768px) {
     header {
@@ -129,5 +185,7 @@ header label{
         text-align: center;
         padding: 0 0.5rem;
     }
-
+    .icon{
+        display: none;
+    }
 }

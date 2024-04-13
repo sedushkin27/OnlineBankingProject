@@ -14,7 +14,6 @@ def start_custom(name, surname, email, number, gender, money):
     session['usermoney'] = money
 
 
-
 def end_custom():
     session.clear()
 
@@ -36,7 +35,14 @@ def support():
 
 @app.route("/Custom")
 def custom():
-    return render_template('custom.html', username=session['username'], usersurname=session['usersurname'],
+    return render_template('customMain.html', username=session['username'], usersurname=session['usersurname'],
+                           useremail=session['useremail'], usernumber=session['usernumber'],
+                           usergender=session['usergender'])
+
+
+@app.route("/Custom/Wallets")
+def wallets():
+    return render_template('customWallet.html', username=session['username'], usersurname=session['usersurname'],
                            useremail=session['useremail'], usernumber=session['usernumber'],
                            usergender=session['usergender'])
 
