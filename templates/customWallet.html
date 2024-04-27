@@ -1,18 +1,19 @@
 {%extends 'custom.html'%}
 
 {%block content%}
-
-<div class="interface">
-    <h1>Wallet</h1>
-    <input type="submit" name="create_card" id="create_card">
-    <label for="create_card"><i class='bx bxs-plus-circle'></i></label>
+<div class="bank_card_block">
+    <div class="interface">
+        <h1>Wallet</h1>
+        <input type="submit" name="create_card" id="create_card">
+        <label for="create_card"><i class='bx bxs-plus-circle'></i></label>
+    </div>
+    <div class="count">
+        <p>Balance: 1000</p>
+        <img src="wallet_icon.png" alt="Wallet icon">
+        <img src="wallet_icon.png" alt="Wallet icon">
+    </div>
+    <div class="interface_down">
+        <a href="#">Add card</a>
+    </div>
 </div>
-<div class="interface_down">
-    <input type="number" min="0" value="1">
-    <input type="text" placeholder="card number " >
-    <input type="button">
-    <button type="button" name="btn" id="btn">Transfer</button>
-</div>
-
-
 {% endblock%}

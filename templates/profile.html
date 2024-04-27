@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleCustom.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+</head>
+<body>
+    <div>
+    </div>
+    <div class="profile-container">
+        <a href="/Custom" class="comeback"><i class='bx bx-left-arrow-alt'></i></a>
+        <div class="profile-info">
+            <img src="{{ url_for('static', filename='image/icon.png') }}" alt="Иконка пользователя" class="user-icon-in-profile">
+            <h1>{{user_nickname}}</h1>
+            <h3>{{user_name}} {{user_surname}}</h3>
+            <h3>Age: {{user_age}}</h3>
+            <h3>Date of birth: {{user_birthday}}</h3>
+            <h3>Email: {{user_email}}</h3>
+            <h3>Number: {{user_number}}</h3>
+            <h3>Residential address: {{user_address}}</h3>
+        </div>
+        <div class="profile-actions">
+            <button class="btn update">update</button>
+            <button class="btn change-password">change password</button>
+        </div>
+        <img src="{{ url_for('static', filename='image/graphs_story.png') }}">
+    </div>
+</body>
+</html>

@@ -16,6 +16,11 @@
             </div>
 
             <div class="input-box">
+                <input type="text" placeholder="User nickname" name="usernickname" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
                 <input type="text" placeholder="User name" name="username" required>
                 <i class='bx bxs-user'></i>
             </div>
@@ -26,8 +31,14 @@
             </div>
 
             <div class="input-box">
+                <input type="date" placeholder="date your birth day" name="birth-day"
+                       min="1800-01-01" max="2024-01-01" required>
+                <i class='bx bxs-calendar'></i>
+            </div>
+
+            <div class="input-box">
                 <input type="tel" placeholder="Phone number" name="number" required>
-                <i class='bx bxs-lock-alt' ></i>
+                <i class='bx bxs-phone'></i>
             </div>
 
             <div class="input-box">
@@ -42,12 +53,9 @@
 
             <div class="input-box-gender">
                 <p>gender:</p>
-                <input type="radio" name="gender" id="radio1">
-                <label for="radio1">male</label>
-                <input type="radio" name="gender" id="radio2">
-                <label for="radio1">female</label>
-                <input type="radio" name="gender" id="radio3">
-                <label for="radio1">other</label>
+                <input type="radio" name="gender" id="radio1" value="male">male<br>
+                <input type="radio" name="gender" id="radio2" value="female">female<br>
+                <input type="radio" name="gender" id="radio3" value="other">other<br>
             </div>
 
             <button type="submit" class="btn">Registration</button>
