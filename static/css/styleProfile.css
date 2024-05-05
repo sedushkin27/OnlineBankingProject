@@ -1,9 +1,15 @@
+/*
+Reset default styles for all elements
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*
+Set background, font, and other styles for the body element
+*/
 body {
     background:url('image/imageMain.jpg');
     background-size: cover;
@@ -17,6 +23,9 @@ body {
     transition: background-color 0.5s ease;
 }
 
+/*
+Style the profile container with a white background, border radius, padding, and shadow
+*/
 .profile-container {
     display: flex;
     flex-direction: column;
@@ -29,6 +38,9 @@ body {
     animation: fade-in 0.5s ease;
 }
 
+/*
+Keyframes for the fade-in animation
+*/
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -38,6 +50,9 @@ body {
     }
 }
 
+/*
+Style the user icon with a width, height, border radius, and margin bottom
+*/
 .user-icon-in-profile {
     width: 100px;
     height: 100px;
@@ -46,12 +61,18 @@ body {
     margin-bottom: 20px;
 }
 
+/*
+Style the profile info with a flex direction, margin bottom, and width
+*/
 .profile-info {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 
+/*
+Style the profile info inputs with padding, border radius, border, margin bottom, font size, and width
+*/
 .profile-info input {
     padding: 10px;
     border-radius: 5px;
@@ -61,21 +82,33 @@ body {
     width: 100%;
 }
 
+/*
+Style the profile container h2 with font size and margin bottom
+*/
 .profile-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/*
+Style the profile container p with font size and line height
+*/
 .profile-container p {
     font-size: 20px;
     line-height: 1.6;
 }
 
+/*
+Style the profile actions with a display of flex and justify content of space between
+*/
 .profile-actions {
     display: flex;
     justify-content: space-between;
 }
 
+/*
+Style the buttons with a background color, color, padding, border, cursor, border radius, font size, transition, and hover effect
+*/
 .btn {
     background-color: #4CAF50;
     color: white;
@@ -100,6 +133,9 @@ body {
     transform: translateY(2px);
 }
 
+/*
+Style the cancel button with a background color and hover effect
+*/
 .btn--cancel {
     background-color: #f44336;
 }
