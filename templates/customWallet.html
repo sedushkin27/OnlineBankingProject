@@ -1,19 +1,44 @@
 {%extends 'custom.html'%}
 
 {%block content%}
-<div class="bank_card_block">
-    <div class="interface">
-        <h1>Wallet</h1>
-        <input type="submit" name="create_card" id="create_card">
-        <label for="create_card"><i class='bx bxs-plus-circle'></i></label>
-    </div>
-    <div class="count">
-        <p>Balance: 1000</p>
-        <img src="wallet_icon.png" alt="Wallet icon">
-        <img src="wallet_icon.png" alt="Wallet icon">
-    </div>
-    <div class="interface_down">
-        <a href="#">Add card</a>
-    </div>
+<div class="bank_card_block" xmlns="http://www.w3.org/1999/html">
+    <form method="post">
+        <div class="name-wallet">
+            <h1>Wallet</h1>
+        </div>
+        <div class="interface_get_send">
+            <div class="money_counter">
+                <h1>
+                    {{user_money}}
+                </h1>
+            </div>
+            <input type="number" class="send_int" name="send_int" id="send_int" value="0" min="0">
+            <input type="submit" class="send_btn" name="send_btn" id="send_btn" value="send">
+            <input type="number" class="get_int" name="send_int" id="get_int" value="0" min="0">
+            <input type="submit" class="get_btn" name="get_btn" id="get_btn" value="get">
+        </div>
+        <div class="count">
+            {% if c_list %}
+                <ul>
+                    {%for i in c_list%}
+                        <li>
+                            <button class="card" type="submit">{{i}}</button>
+                        </li>
+                    {%endfor%}
+                </ul>
+            {% else %}
+                <h1>No cards</h1>
+            {% endif %}
+        </div>
+
+        <div class="add_card">
+            <input class="input_name" id="name" type="text" name="name" placeholder="Name">
+            <input class="input_surname" id="surname" type="text" name="surname" placeholder="Surname">
+            <input class="input_number" id="number_card" type="text" name="number_card" placeholder="number_card">
+            <input class="input_cvv" id="cvv2" type="text" name="cvv2" placeholder="cvv2">
+            <input class="input_date" id="expiration" type="date" name="expiration" placeholder="expiration" min="2024-01-01">
+            <button type="submit" class="add_btn">Add card</button>
+        </div>
+    </form>
 </div>
-{% endblock%}
+{%endblock%}

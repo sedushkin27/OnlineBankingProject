@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleAddCard.css') }}">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>AddCreditCard</title>
+</head>
+<body>
+<form method="post">
+  <div class="con">
+    <div class="line">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+      </div>
+      <div>
+        <label for="surname">Surname</label>
+        <input id="surname" type="text" name="surname">
+      </div>
+    </div>
+    <div class="line">
+      <div>
+        <label for="number_card">Credit card number</label>
+        <input id="number_card" type="text" name="number_card">
+      </div>
+      <div>
+        <label for="cvv2">Cvv2</label>
+        <input id="cvv2" type="text" name="cvv2">
+      </div>
+    </div>
+    <div class="line">
+      <div>
+        <label for="expiration">Expiration</label>
+        <input id="expiration" type="date" name="expiration" min="2024-01-01">
+      </div>
+    </div>
+    <div class="interface_btn">
+      <button class="btn" type="submit">Continue to checkout</button>
+      <a class="btn" href="/Custom/Wallets">Cancel</a>
+    </div>
+  </div>
+</form>
+</body>
+</html>
