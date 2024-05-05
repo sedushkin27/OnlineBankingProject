@@ -1,3 +1,9 @@
-# Default ignored files
+# IGNORED FILES
+# The following lines define a list of files or directories that should be ignored by version control systems or other tools.
+# This can help prevent accidental inclusion of sensitive or unnecessary files in repositories or backups.
+
+# The first line specifies the '/shelf/' directory as an ignored item. This directory may contain temporary or intermediate files that are not needed for version control or distribution.
 /shelf/
+
+# The second line specifies the '/workspace.xml' file as an ignored item. This file may contain user-specific settings or configurations that are not relevant to other users or environments.
 /workspace.xml
