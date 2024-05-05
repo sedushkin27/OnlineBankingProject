@@ -1,138 +1,221 @@
 /* Reset some default styles for all elements */
 * {
+  /* Set margin and padding to 0 */
   margin: 0;
   padding: 0;
+
+  /* Set box-sizing to border-box to include padding and border in element's total width and height */
   box-sizing: border-box;
+
+  /* Remove borders and outlines */
   border: none;
   outline: none;
+
+  /* Remove text decoration and list style */
   text-decoration: none;
   list-style: none;
+
+  /* Convert text to uppercase */
   text-transform: capitalize;
 }
 
 /* Set background, min and max height for the body element */
 body {
+  /* Set background image */
   background: url('image/imageMain.jpg');
+
+  /* Set minimum height to 50vh (viewport height) */
   min-height: 50vh;
+
+  /* Set maximum height to 200vh (viewport height) */
   max-height: 200vh;
+
+  /* Set background attachment to fixed to keep the image in place when scrolling */
   background-attachment: fixed;
+
+  /* Set background size to cover the entire viewport */
   background-size: cover;
+
+  /* Set background position to 50% 30% to horizontally center the image and position it 30% from the top */
   background-position: 50% 30%;
-  margin: 0;
-  padding: 0;
+
+  /* Set font family to sans-serif */
   font-family: sans-serif;
 }
 
 /* Style for anchor tags */
 a {
+  /* Remove text decoration */
   text-decoration: none;
+
+  /* Inherit color from parent element */
   color: inherit;
 }
 
 /* Style for image elements */
 img {
+  /* Set maximum width to 100% to prevent images from exceeding their parent container's width */
   max-width: 100%;
 }
 
 /* Header styles */
 header {
+  /* Set display to flex to create a flexible container */
   display: flex;
+
+  /* Align items horizontally using justify-content: space-between */
   justify-content: space-between;
+
+  /* Align items vertically using align-items: center */
   align-items: center;
+
+  /* Add padding to the left and right of the header */
   padding: 0 2rem;
+
+  /* Set background color */
   background-color: #f0f0f0;
+
+  /* Add box shadow */
   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
 }
 
 /* Styles for .icon class */
 .icon {
+  /* Set width and height to 64px */
   width: 64px;
   height: 64px;
 }
 
 /* Styles for .icon_user class */
 .icon_user{
+  /* Set width and height to 64px */
   width: 64px;
   height: 64px;
 }
 
 /* Navbar styles */
 .navbar {
+  /* Position the navbar fixed to the left */
   left: 0;
+
+  /* Remove padding and margin */
   padding: 0;
   margin: 0;
 }
 
 /* Styles for navbar anchor tags */
 .navbar a {
+  /* Display each anchor tag as a block element to create a rectangular shape */
   display: block;
+
+  /* Add padding to the left and right of each anchor tag */
   padding: 0 1rem;
+
+  /* Set color */
   color: #333;
 }
 
 /* Styles for hover effect on navbar anchor tags */
 .navbar a:hover {
+  /* Change background color on hover */
   background-color: #ddd;
+
+  /* Change cursor to pointer on hover */
   cursor: pointer;
 }
 
 /* Styles for displaying the navbar on hover */
 nav:hover ul {
+  /* Display the unordered list when the nav element is hovered */
   display: block;
 }
 
 /* Styles for list items in the navbar */
 nav ul li {
+  /* Add padding to the top and bottom of each list item */
   padding: 0.5rem 1rem;
 }
 
 /* Styles for anchor tags in the navbar list items */
 nav ul li a {
+  /* Set color */
   color: #333;
 }
 
 /* Styles for hover effect on navbar list item anchor tags */
 nav ul li a:hover {
+  /* Change background color on hover */
   background-color: #ddd;
 }
 
 /* Styles for input and label elements in the header */
 header input,
 header label {
+  /* Hide input and label elements */
   display: none;
 }
 
 /* Styles for the label used for the hamburger menu */
 header label {
+  /* Set font size to 2rem */
   font-size: 2rem;
+
+  /* Set color to black */
   color: black;
+
+  /* Set cursor to pointer */
   cursor: pointer;
+
+  /* Hide the label by default */
   visibility: hidden;
   opacity: 0;
 }
 
 /* Styles for the bank_card_block class */
 .bank_card_block {
+  /* Set display to flex to create a flexible container */
   display: flex;
+
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 1519px;
   height: 950px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 1519px/2 - 0.5px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 950px/2 + 21px);
 
+  /* Set background color */
   background: rgba(253, 146, 68, 1);
 }
 
 /* Styles for the name-wallet class within bank_card_block */
 .bank_card_block .name-wallet {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 216px;
   height: 73px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 216px/2 - 633px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 73px/2 - 409.5px);
+
+  /* Add drop shadow */
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+  /* Set background color */
   background: #DFB158;
+
+  /* Set border radius */
   border-radius: 13px;
 
 }
@@ -140,19 +223,34 @@ header label {
 /* Styles for the h1 element within name-wallet */
 .bank_card_block .name-wallet h1 {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
+  width: 216px;
+  height: 73px;
+
+  /* Calculate the left position to center the element horizontally */
   left: 30px;
 
+  /* Set font family, style, weight, size, and line-height */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 77px;
+
+  /* Center the text vertically */
   display: flex;
   align-items: center;
+
+  /* Center the text horizontally */
   text-align: center;
+
+  /* Set letter spacing */
   letter-spacing: -0.05em;
 
+  /* Set color */
   color: #000000;
 
 }
@@ -160,54 +258,90 @@ header label {
 /* Styles for the count class within bank_card_block */
 .bank_card_block .count {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 433px;
   height: 787px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 1475px/2 - 0.5px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 693px/2 + 0.5px);
 
+  /* Set background color */
   background: #F9F9F9;
+
+  /* Set border radius */
   border-radius: 13px;
 
 }
 
 /* Styles for p elements within bank_card_block */
 .bank_card_block p {
+  /* Set font size */
   font-size: 20px;
+
+  /* Add margin between paragraphs */
   margin: 10px 0px;
 }
 
 /* Styles for the add_card class within bank_card_block */
 .bank_card_block .add_card {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 985px;
   height: 787px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 985px/2 + 230.5px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 787px/2 + 53.5px);
 
+  /* Set background color */
   background: #DC700D;
+
+  /* Set border radius */
   border-radius: 13px;
 
 }
 
 /* Styles for input elements within add_card */
 .bank_card_block .add_card input {
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 469px;
   height: 94px;
 
+  /* Set background color */
   background: #D9D9D9;
+
+  /* Set border radius */
   border-radius: 13px;
 
+  /* Set font family, style, weight, size, and line-height */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 48px;
+
+  /* Center the text vertically */
   display: flex;
   align-items: center;
+
+  /* Center the text horizontally */
   text-align: center;
+
+  /* Set letter spacing */
   letter-spacing: -0.05em;
 }
 
@@ -217,33 +351,56 @@ header label {
 .input_number,
 .input_cvv,
 .input_date {
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 469px/2 - 250px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 94px/2 - 340px);
 }
 
 /* Styles for the add_btn class within bank_card_block */
 .bank_card_block .add_card .add_btn {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 469px;
   height: 97px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 469px/2 + 250px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 97px/2 - 120px);
 
+  /* Set background gradient */
   background: linear-gradient(180deg, #BC950C 0%, #DEA40F 99%);
+
+  /* Add box shadow */
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Set border radius */
   border-radius: 13px;
 
+  /* Set font family, style, weight, size, and line-height */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+
+  /* Center the text vertically */
   display: flex;
   align-items: center;
+
+  /* Center the text horizontally */
   text-align: center;
+
+  /* Set letter spacing */
   letter-spacing: -0.05em;
 
+  /* Set color */
   color: #000000;
 
 }
@@ -251,13 +408,23 @@ header label {
 /* Styles for the interface_get_send class within bank_card_block */
 .bank_card_block .interface_get_send {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 1230px;
   height: 83px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 1230px/2 + 110px);
+
+  /* Calculate the top position to center the element vertically */
   top: calc(50% - 83px/2 - 410px);
 
+  /* Set background color */
   background: #DC700D;
+
+  /* Set border radius */
   border-radius: 13px;
 
 }
@@ -265,13 +432,23 @@ header label {
 /* Styles for the money_counter class within interface_get_send */
 .bank_card_block .interface_get_send .money_counter {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 173px;
   height: 61px;
+
+  /* Calculate the left position to center the element horizontally */
   left: calc(50% - 173px/2 - 500.5px);
+
+  /* Calculate the top position to center the element vertically */
   top: 10px;
 
+  /* Set background color */
   background: #FFE600;
+
+  /* Set border radius */
   border-radius: 13px;
 
 }
@@ -279,199 +456,65 @@ header label {
 /* Styles for the h1 element within money_counter */
 .bank_card_block .interface_get_send .money_counter h1 {
 
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 175px;
   height: 63px;
+
+  /* Calculate the left position to center the element horizontally */
   left: 10px;
 
+  /* Set font family, style, weight, size, and line-height */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+
+  /* Center the text vertically */
   display: flex;
   align-items: center;
+
+  /* Center the text horizontally */
   text-align: center;
+
+  /* Set letter spacing */
   letter-spacing: -0.05em;
 
+  /* Set color */
   color: #000000;
 
 }
 
 /* Styles for input[type='submit'] elements within bank_card_block */
 .bank_card_block input[type='submit'] {
+  /* Position the element absolutely */
   position: absolute;
+
+  /* Set width and height */
   width: 154px;
   height: 62px;
 
+  /* Add drop shadow */
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 
+  /* Set background gradient */
   background: linear-gradient(180deg, #8D8F0A 0%, #F1F511 100%);
+
+  /* Set border radius */
   border-radius: 13px;
 
+  /* Set font family, style, weight, size, and line-height */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+
+  /* Center the text vertically */
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: -0.05em;
 
-  color: #000000;
-
-}
-
-/* Styles for the send_btn and get_btn classes within interface_get_send */
-.bank_card_block .interface_get_send .send_btn,
-.bank_card_block .interface_get_send .get_btn {
-  top: 10px;
-}
-
-/* Styles for the send_int and get_int classes within interface_get_send */
-.bank_card_block .interface_get_send .send_int,
-.bank_card_block .interface_get_send .get_int {
-  width: 323px;
-  height: 62px;
-  border-radius: 13px;
-  background: #D9D9D9;
-}
-
-/* Styles for the card class */
-.card {
-  left: -13px;
-  width: 400px;
-  height: 66px;
-  margin-top: 5px;
-
-  background: #DEB110;
-  border-radius: 13px;
-
-}
-
-/* Styles for the btn class */
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Styles for hover effect on btn class */
-.btn:hover {
-  background-color: #45a049;
-}
-
-/* Media query for max-height: 1080px */
-@media (max-height: 1080px) {
-  /* Styles for the bank_card_block class */
-  .bank_card_block {
-    position: absolute;
-    width: 1267px;
-    height: 719px;
-    left: calc(50% - 1267px/2 - 0.5px);
-    top: calc(50% - 719px/2 + 21px);
-
-    background: rgba(253, 146, 68, 1);
-  }
-
-  /* Styles for the input[type='submit'] elements within bank_card_block */
-  .bank_card_block input[type='submit'] {
-    position: absolute;
-    width: 130px;
-    height: 46px;
-
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-
-    background: linear-gradient(180deg, #8D8F0A 0%, #F1F511 100%);
-    border-radius: 13px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.05em;
-
-    color: #000000;
-  }
-
-  /* Styles for the name-wallet class within bank_card_block */
-  .bank_card_block .name-wallet {
-
-    position: absolute;
-    width: 216px;
-    height: 73px;
-    left: calc(50% - 216px/2 - 500px);
-    top: calc(50% - 73px/2 - 309.5px);
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-    background: #DFB158;
-    border-radius: 13px;
-
-  }
-
-  /* Styles for the h1 element within name-wallet */
-  .bank_card_block .name-wallet h1 {
-
-    position: absolute;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 77px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.05em;
-
-    color: #000000;
-  }
-
-  /* Styles for the count class within bank_card_block */
-  .bank_card_block .count {
-
-    position: absolute;
-    width: 1196px;
-    height: 524px;
-    left: calc(50% - 1196px/2 - 0.5px);
-    top: calc(50% - 524px/2 + 0.5px);
-
-    background: #F9F9F9;
-    border-radius: 13px;
-
-  }
-
-  /* Styles for the interface_down class within bank_card_block */
-  .bank_card_block .interface_down {
-
-    position: absolute;
-    width: 227px;
-    height: 73px;
-    left: calc(50% - 227px/2 + 5px);
-    top: calc(50% - 73px/2 + 310.5px);
-
-    background: linear-gradient(180deg, #BC950C 0%, #DEA40F 99%);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 13px;
-
-  }
-
-  /* Styles for the a element within interface_down */
-  .bank_card_block .interface_down a {
-
-    position: absolute;
-    width: 273px;
-    height: 97px;
-    left: 60px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
+  /* Center the text hor
