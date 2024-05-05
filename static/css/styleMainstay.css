@@ -1,195 +1,271 @@
 /* Reset default styles for all elements */
 * {
+  /* Margin and padding are set to 0 to remove any spacing around elements */
   margin: 0;
   padding: 0;
+
+  /* Box-sizing is set to border-box to include padding and border in element's total width and height */
   box-sizing:border-box;
+
+  /* Font family is set to "Popins", sans-serif for consistent typography */
   font-family: "Popins", sans-serif;
 }
 
 /* Set background, minimum height, and other properties for the body */
 body{
+  /* Background image is set to "image/imageMain.jpg" */
   background:url('image/imageMain.jpg');
+
+  /* Minimum height is set to 50vh to ensure the background image covers at least half the viewport height */
   min-height: 50vh;
+
+  /* Maximum height is set to 200vh to limit the height of the body element */
   max-height: 200vh;
+
+  /* Background attachment is set to fixed to keep the background image in place when scrolling */
   background-attachment: fixed;
+
+  /* Background size is set to cover to ensure the background image covers the entire viewport */
   background-size: cover;
+
+  /* Background position is set to 50% 30% to center the background image vertically and horizontally */
   background-position: 50% 30%;
 }
 
 /* Style for the icon class */
 .icon{
+  /* Height and width are set to 64px to maintain consistency in icon size */
   height: 64px;
   width: 64px;
 }
 
 /* Style for the wrapper class */
 .wrapper{
+  /* Display is set to flex to enable flexible layout */
   display: flex;
+
+  /* Background color is set to #f0f0f0 for the wrapper element */
   background-color: #f0f0f0;
+
+  /* Align items are set to center to vertically center the content */
   align-items: center;
+
+  /* Box shadow is set to add a subtle shadow effect to the wrapper element */
   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+
+  /* Justify content is set to space-between to distribute the content evenly within the wrapper element */
   justify-content: space-between;
+
+  /* Padding is set to 0px 2rem to add some horizontal spacing */
   padding: 0px 2rem;
+
+  /* Position is set to sticky to keep the wrapper element at the top of the viewport when scrolling */
   position: sticky;
+
+  /* Top is set to 0 to position the wrapper element at the top of the viewport */
   top: 0;
+
+  /* Z-index is set to 1000 to ensure the wrapper element appears above other elements */
   z-index: 1000;
+
+  /* Vertical align is set to middle to center the content vertically */
   vertical-align: middle;
+
+  /* Align items is set to center to center the content vertically */
   align-items: center;
 }
 
 /* Style for the navbar class */
 .navbar {
+  /* Position is set to absolute to position the navbar relative to its nearest positioned ancestor */
   position: absolute;
+
+  /* Width is set to 50% to occupy half the viewport width */
   width: 50%;
+
+  /* Left and top properties are used to position the navbar relative to its nearest positioned ancestor */
   left: 100px;
   top: 50%;
+
+  /* Display is set to flex to enable flexible layout */
   display: flex;
+
+  /* Flex-wrap is set to wrap to allow the flex items to wrap when there's not enough space */
   flex-wrap: wrap;
 }
 
 /* Style for the links inside the navbar */
 .navbar a {
+  /* Display is set to block to make the links occupy the full width of their container */
   display: block;
+
+  /* Padding is set to 0 0.5rem to add some horizontal spacing */
   padding: 0 0.5rem;
+
+  /* Color is set to #333 for the link text */
   color: #333;
+
+  /* Text decoration is set to none to remove any underlines from the links */
   text-decoration: none;
 }
 
 /* Style for hover effect on the links inside the navbar */
 .navbar a:hover {
+  /* Background color is set to #ddd on hover */
   background-color: #ddd;
+
+  /* Cursor is set to pointer to indicate that the element is clickable */
   cursor: pointer;
 }
 
 /* Style for the login button */
 .login_btn {
+  /* Background is set to a linear gradient for a gradient effect */
   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+
+  /* Border is set to 0 to remove any borders */
   border: 0;
+
+  /* Border radius is set to 12px to add rounded corners */
   border-radius: 12px;
+
+  /* Color is set to #FFFFFF for the button text */
   color: #FFFFFF;
+
+  /* Cursor is set to pointer to indicate that the element is clickable */
   cursor: pointer;
+
+  /* Display is set to inline-block to enable the button to be styled as a block-level element */
   display: inline-block;
+
+  /* Font family is set to a specific font for consistent typography */
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  /* Font size is set to 16px for consistent typography */
   font-size: 16px;
+
+  /* Font weight is set to 500 for bold typography */
   font-weight: 500;
+
+  /* Line height is set to 2.5 for consistent spacing between lines */
   line-height: 2.5;
+
+  /* Outline is set to transparent to remove any outlines */
   outline: transparent;
+
+  /* Padding is set to 0 1rem to add some horizontal spacing */
   padding: 0 1rem;
+
+  /* Text align is set to center to center the button text */
   text-align: center;
+
+  /* Text decoration is set to none to remove any underlines */
   text-decoration: none;
+
+  /* Transition is set to add a smooth animation effect */
   transition: box-shadow .2s ease-in-out;
+
+  /* User select is set to none to prevent text selection */
   user-select: none;
+
+  /* Webkit user select is set to none to prevent text selection in webkit-based browsers */
   -webkit-user-select: none;
+
+  /* Touch action is set to manipulation to enable touch-based interactions */
   touch-action: manipulation;
+
+  /* White space is set to nowrap to prevent text wrapping */
   white-space: nowrap;
 }
 
 /* Style for focus effect on the login button */
 .login_btn:not([disabled]):focus {
+  /* Box shadow is set to add a subtle shadow effect on focus */
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 /* Style for hover effect on the login button */
 .login_btn:not([disabled]):hover {
+  /* Box shadow is set to add a subtle shadow effect on hover */
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 /* Style for the registration button */
 .registration_btn {
+  /* Background is set to a linear gradient for a gradient effect */
   background: linear-gradient(to bottom right, #FFB833, #F57E06);
+
+  /* Border is set to 0 to remove any borders */
   border: 0;
+
+  /* Border radius is set to 12px to add rounded corners */
   border-radius: 12px;
+
+  /* Color is set to #FFFFFF for the button text */
   color: #FFFFFF;
+
+  /* Cursor is set to pointer to indicate that the element is clickable */
   cursor: pointer;
+
+  /* Display is set to inline-block to enable the button to be styled as a block-level element */
   display: inline-block;
+
+  /* Font family is set to a specific font for consistent typography */
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  /* Font size is set to 16px for consistent typography */
   font-size: 16px;
+
+  /* Font weight is set to 500 for bold typography */
   font-weight: 500;
+
+  /* Line height is set to 2.5 for consistent spacing between lines */
   line-height: 2.5;
+
+  /* Outline is set to transparent to remove any outlines */
   outline: transparent;
+
+  /* Padding is set to 0 1rem to add some horizontal spacing */
   padding: 0 1rem;
+
+  /* Text align is set to center to center the button text */
   text-align: center;
+
+  /* Text decoration is set to none to remove any underlines */
   text-decoration: none;
+
+  /* Transition is set to add a smooth animation effect */
   transition: box-shadow .2s ease-in-out;
+
+  /* User select is set to none to prevent text selection */
   user-select: none;
+
+  /* Webkit user select is set to none to prevent text selection in webkit-based browsers */
   -webkit-user-select: none;
+
+  /* Touch action is set to manipulation to enable touch-based interactions */
   touch-action: manipulation;
+
+  /* White space is set to nowrap to prevent text wrapping */
   white-space: nowrap;
 }
 
 /* Style for focus effect on the registration button */
 .registration_btn:not([disabled]):focus {
+  /* Box shadow is set to add a subtle shadow effect on focus */
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(245, 126, 6, 0.5), .125rem .125rem 1rem rgba(255, 184, 51, 0.5);
 }
 
 /* Style for hover effect on the registration button */
 .registration_btn:not([disabled]):hover {
+  /* Box shadow is set to add a subtle shadow effect on hover */
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(245, 126, 6, 0.5), .125rem .125rem 1rem rgba(255, 184, 51, 0.5);
 }
 
 /* Style for the text wrapper class */
 .text_wrapper{
+  /* Background color is set to #f5f5f5 for the text wrapper element */
   background-color: #f5f5f5;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
-  width: 80%;
-  min-height: 800px;
-  margin: 50px auto;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  border-radius: 10px;
-  padding: 1rem;
-}
 
-/* Style for the h1 element inside the text wrapper */
-.text_wrapper h1{
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Style for the h2 and h3 elements inside the text wrapper */
-.text_wrapper h2, h3{
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
-/* Style for the p element inside the text wrapper */
-.text_wrapper p{
-  line-height: 1.5;
-  color: #666;
-}
-
-/* Style for the ul element inside the text wrapper */
-.text_wrapper ul{
-
-}
-
-/* Style for the block-list class */
-.block-list{
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #e9ecef;
-}
-
-/* Style for the ul element inside the block-list */
-.block-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Style for the li elements inside the block-list */
-.block-list li {
-  margin-bottom: 10px;
-}
-
-/* Style for the b element inside the block-list li */
-.block-list li b {
-  font-weight: bold;
-}
-
-/* Style for the img element inside the text wrapper */
-.text_wrapper img{
-  text-align: center;
-}
+  /* Box shadow is set to add a subtle shadow effect to the text wrapper element */
+  box-shadow: 0 .5rem 1rem
