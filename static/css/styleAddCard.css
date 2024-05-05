@@ -1,130 +1,19 @@
 /* Reset margin and box-sizing for all elements */
 * {
+    /* Set the margin to 0 for all elements to ensure consistent spacing */
     margin: 0;
+
+    /* Set the box-sizing property to border-box for all elements to include padding and borders in the total width and height */
     box-sizing: border-box;
 }
 
 /* Define the body element's styles */
 body {
-    /* Set the background image and adjust its position */
+    /* Set the background image to 'image/imageMain.jpg' */
     background:url('image/imageMain.jpg');
+
+    /* Adjust the background image size to cover the entire viewport */
     background-size: cover;
-    background-position: 50% 30%;
-    /* Center the content using flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Fill the viewport height */
-    height: 100vh;
-    /* Set the font family */
-    font-family: Arial, sans-serif;
-    /* Add a background color for transitions */
-    background-color: #f5f5f5;
-    /* Animate the background color change */
-    transition: background-color 0.5s ease;
-}
 
-/* Define the container element's styles */
-.con{
-    /* Center the element */
-    display: block;
-    /* Set the background color */
-    background-color: #fff;
-    /* Round the corners */
-    border-radius: 10px;
-    /* Set the width */
-    width: 500px;
-    /* Add padding */
-    padding: 40px;
-    /* Add a box-shadow */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    /* Animate the fade-in effect */
-    animation: fade-in 0.5s ease;
-}
-
-/* Define the line element's styles */
-.line{
-    /* Use flexbox to space the content */
-    display: flex;
-    justify-content: space-between;
-    /* Add padding */
-    padding: 10px;
-}
-
-/* Define the line div element's styles */
-.line div{
-    /* Center the content */
-    margin: auto 10px;
-}
-
-/* Define the line div label element's styles */
-.line div label{
-    /* Display the content as a block element */
-    display: block;
-}
-
-/* Define the line div input element's styles */
-.line div input{
-    /* Make the input width 100% */
-    width: 100%;
-}
-
-/* Define the button element's styles */
-.btn {
-    /* Set the background color */
-    background-color: #4CAF50;
-    /* Set the text color */
-    color: white;
-    /* Set the padding */
-    padding: 10px 20px;
-    /* Remove borders */
-    border: none;
-    /* Add a cursor when hovering */
-    cursor: pointer;
-    /* Round the corners */
-    border-radius: 5px;
-    /* Set the font size */
-    font-size: 16px;
-    /* Animate the background color change */
-    transition: background-color 0.3s ease;
-}
-
-/* Define the button hover styles */
-.btn:hover {
-    /* Change the background color */
-    background-color: #45a049;
-}
-
-/* Define the button focus styles */
-.btn:focus {
-    /* Remove the outline */
-    outline: none;
-    /* Add a box-shadow */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Define the button active styles */
-.btn:active {
-    /* Add a transform to move the button down */
-    transform: translateY(2px);
-}
-
-/* Define the cancel button styles */
-.btn--cancel {
-    /* Set the background color */
-    background-color: #f44336;
-}
-
-/* Define the cancel button hover styles */
-.btn--cancel:hover {
-    /* Change the background color */
-    background-color: #da190b;
-}
-
-/* Define the interface button container styles */
-.interface_btn{
-    /* Use flexbox to space the content */
-    display: flex;
-    /* Space the buttons */
-    justify-content: space-between;
-}
+    /* Position the background image at 50% horizontal and 30% vertical position */
+    background-position: 50% 3
