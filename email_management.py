@@ -2,9 +2,8 @@ import smtplib  # Import the smtplib library to send emails
 from email.message import EmailMessage  # Import the EmailMessage class to create the email message
 
 # Set the sender and password for the email account
-sender = ''
-password = ''
-
+sender = ''  # Enter the email address of the sender here
+password = ''  # Enter the password for the email account here
 
 def send_email(recipient, massage):
     # Create an SMTP object for the Gmail server and specify the port number
