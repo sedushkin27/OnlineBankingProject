@@ -1,145 +1,109 @@
-/*
-Reset default styles for all elements
-*/
 * {
-    margin: 0; /* Reset the margin for all elements */
-    padding: 0; /* Reset the padding for all elements */
-    box-sizing: border-box; /* Change the box model to include padding and border in element's total width and height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*
-Set background, font, and other styles for the body element
-*/
 body {
-    background:url('image/imageMain.jpg'); /* Set the background image for the body */
-    background-size: cover; /* Make the background image cover the entire viewport */
-    background-position: 50% 30%; /* Center the background image vertically and move it up by 30% */
-    display: flex; /* Set the display property of the body to flex */
-    justify-content: center; /* Center the child elements horizontally */
-    align-items: center; /* Center the child elements vertically */
-    height: 100vh; /* Set the height of the body to the height of the viewport */
-    font-family: Arial, sans-serif; /* Set the font family for the body */
-    background-color: #f5f5f5; /* Set the background color for the body */
-    transition: background-color 0.5s ease; /* Add a transition effect to the background color */
+    background:url('image/imageMain.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    transition: background-color 0.5s ease;
 }
 
-/*
-Style the profile container with a white background, border radius, padding, and shadow
-*/
 .profile-container {
-    display: flex; /* Set the display property of the profile container to flex */
-    flex-direction: column; /* Set the direction of the flex items to column */
-    background-color: #fff; /* Set the background color of the profile container to white */
-    border-radius: 10px; /* Set the border radius of the profile container */
-    width: 600px; /* Set the width of the profile container */
-    padding: 40px; /* Set the padding of the profile container */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a shadow to the profile container */
-    text-align: center; /* Center the text inside the profile container */
-    animation: fade-in 0.5s ease; /* Add a fade-in animation to the profile container */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fade-in 0.5s ease;
 }
 
-/*
-Keyframes for the fade-in animation
-*/
 @keyframes fade-in {
     0% {
-        opacity: 0; /* Set the initial opacity of the profile container to 0 */
+        opacity: 0;
     }
     100% {
-        opacity: 1; /* Set the final opacity of the profile container to 1 */
+        opacity: 1;
     }
 }
 
-/*
-Style the user icon with a width, height, border radius, and margin bottom
-*/
 .user-icon-in-profile {
-    width: 100px; /* Set the width of the user icon */
-    height: 100px; /* Set the height of the user icon */
-    align-self: center; /* Center the user icon vertically */
-    border-radius: 50%; /* Make the user icon circular */
-    margin-bottom: 20px; /* Add a margin bottom to the user icon */
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-/*
-Style the profile info with a flex direction, margin bottom, and width
-*/
 .profile-info {
-    display: flex; /* Set the display property of the profile info to flex */
-    flex-direction: column; /* Set the direction of the flex items to column */
-    margin-bottom: 30px; /* Add a margin bottom to the profile info */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
-/*
-Style the profile info inputs with padding, border radius, border, margin bottom, font size, and width
-*/
 .profile-info input {
-    padding: 10px; /* Add padding to the profile info inputs */
-    border-radius: 5px; /* Set the border radius of the profile info inputs */
-    border: 1px solid #ccc; /* Set the border of the profile info inputs */
-    margin-bottom: 15px; /* Add a margin bottom to the profile info inputs */
-    font-size: 16px; /* Set the font size of the profile info inputs */
-    width: 100%; /* Make the profile info inputs take up the full width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
 }
 
-/*
-Style the profile container h2 with font size and margin bottom
-*/
 .profile-container h2 {
-    font-size: 24px; /* Set the font size of the profile container h2 */
-    margin-bottom: 10px; /* Add a margin bottom to the profile container h2 */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/*
-Style the profile container p with font size and line height
-*/
 .profile-container p {
-    font-size: 20px; /* Set the font size of the profile container p */
-    line-height: 1.6; /* Set the line height of the profile container p */
+    font-size: 20px;
+    line-height: 1.6;
 }
 
-/*
-Style the profile actions with a display of flex and justify content of space between
-*/
 .profile-actions {
-    display: flex; /* Set the display property of the profile actions to flex */
-    justify-content: space-between; /* Set the justify content of the profile actions to space between */
+    display: flex;
+    justify-content: space-between;
 }
 
-/*
-Style the buttons with a background color, color, padding, border, cursor, border radius, font size, transition, and hover effect
-*/
 .btn {
-    background-color: #4CAF50; /* Set the background color of the buttons */
-    color: white; /* Set the color of the buttons */
-    padding: 10px 20px; /* Add padding to the buttons */
-    border: none; /* Remove the border from the buttons */
-    cursor: pointer; /* Set the cursor to pointer when hovering over the buttons */
-    border-radius: 5px; /* Set the border radius of the buttons */
-    font-size: 16px; /* Set the font size of the buttons */
-    transition: background-color 0.3s ease; /* Add a transition effect to the background color of the buttons */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #45a049; /* Set the background color of the buttons when hovered */
+    background-color: #45a049;
 }
 
 .btn:focus {
-    outline: none; /* Remove the outline from the buttons when focused */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow to the buttons when focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn:active {
-    transform: translateY(2px); /* Add a slight push down effect to the buttons when clicked */
+    transform: translateY(2px);
 }
 
-/*
-Style the cancel button with a background color and hover effect
-*/
 .btn--cancel {
-    background-color: #f44336; /* Set the background color of the cancel button */
+    background-color: #f44336;
 }
 
 .btn--cancel:hover {
-    background-color: #da190b; /* Set the background color of the cancel button when hovered */
+    background-color: #da190b;
 }
