@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+body {
+    background:url('image/imageMain.jpg');
+    min-height: 50vh;
+    max-height: 200vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 30%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.icon_user{
+    width: 64px;
+    height: 64px;
+}
+
+.navbar {
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 0 1rem;
+    color: #333;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size:2rem;
+    color: black;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.bank_card_block {
+    display: flex;
+    position: absolute;
+    width: 1519px;
+    height: 950px;
+    left: calc(50% - 1519px/2 - 0.5px);
+    top: calc(50% - 950px/2 + 21px);
+
+    background: rgba(253, 146, 68, 1);
+}
+
+.bank_card_block .name-wallet {
+
+    position: absolute;
+    width: 216px;
+    height: 73px;
+    left: calc(50% - 216px/2 - 633px);
+    top: calc(50% - 73px/2 - 409.5px);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #DFB158;
+    border-radius: 13px;
+
+
+}
+.bank_card_block .name-wallet h1{
+
+    position: absolute;
+    left: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #000000;
+
+
+}
+
+.bank_card_block .count {
+
+    position: absolute;
+    width: 433px;
+    height: 787px;
+    left: calc(50% - 1475px/2 - 0.5px);
+    top: calc(50% - 693px/2 + 0.5px);
+
+    background: #F9F9F9;
+    border-radius: 13px;
+
+}
+
+.bank_card_block p {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.bank_card_block .add_card {
+
+    position: absolute;
+    width: 985px;
+    height: 787px;
+    left: calc(50% - 985px/2 + 230.5px);
+    top: calc(50% - 787px/2 + 53.5px);
+
+    background: #DC700D;
+    border-radius: 13px;
+
+}
+
+.bank_card_block .add_card input{
+    position: absolute;
+    width: 469px;
+    height: 94px;
+
+    background: #D9D9D9;
+    border-radius: 13px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.05em;
+}
+
+.input_name{
+    left: calc(50% - 469px/2 - 250px);
+    top: calc(50% - 94px/2 - 340px);
+}
+.input_surname{
+    left: calc(50% - 469px/2 + 250px);
+    top: calc(50% - 94px/2 - 340px);
+}
+.input_number{
+    left: calc(50% - 469px/2 - 250px);
+    top: calc(50% - 94px/2 - 230px);
+}
+.input_cvv{
+    left: calc(50% - 469px/2 + 250px);
+    top: calc(50% - 94px/2 - 230px);
+}
+.input_date{
+    left: calc(50% - 469px/2 - 250px);
+    top: calc(50% - 94px/2 - 120px);
+}
+
+.bank_card_block .add_card .add_btn {
+
+    position: absolute;
+    width: 469px;
+    height: 97px;
+    left: calc(50% - 469px/2 + 250px);
+    top: calc(50% - 97px/2 - 120px);
+
+    background: linear-gradient(180deg, #BC950C 0%, #DEA40F 99%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #000000;
+
+}
+
+.interface_get_send{
+
+    position: absolute;
+    width: 1230px;
+    height: 83px;
+    left: calc(50% - 1230px/2 + 110px);
+    top: calc(50% - 83px/2 - 410px);
+
+    background: #DC700D;
+    border-radius: 13px;
+
+}
+
+.interface_get_send .money_counter{
+
+    position: absolute;
+    width: 173px;
+    height: 61px;
+    left: calc(50% - 173px/2 - 500.5px);
+    top: 10px;
+
+    background: #FFE600;
+    border-radius: 13px;
+
+}
+
+.interface_get_send .money_counter h1{
+
+    position: absolute;
+    width: 175px;
+    height: 63px;
+    left: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #000000;
+
+}
+
+.interface_get_send input[type='submit']{
+    position: absolute;
+    width: 154px;
+    height: 62px;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+    background: linear-gradient(180deg, #8D8F0A 0%, #F1F511 100%);
+    border-radius: 13px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #000000;
+
+}
+
+.interface_get_send .send_btn{
+    top: 10px;
+    left: calc(50% - 272px/2 + 580px);
+}
+
+.interface_get_send .get_btn{
+    top: 10px;
+    left: calc(50% - 272px/2 + 80px);
+}
+
+.interface_get_send .send_int{
+
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 272px/2 + 250px);
+    width: 323px;
+    height: 62px;
+    border-radius: 13px;
+    background: #D9D9D9;
+
+}
+.interface_get_send .get_int{
+
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 272px/2 - 250px);
+    width: 323px;
+    height: 62px;
+    border-radius: 13px;
+    background: #D9D9D9;
+
+}
+
+.card{
+    appearance: none;
+    left: -13px;
+    width: 400px;
+    height: 66px;
+    margin-top: 5px;
+
+    background: #DEB110;
+    border-radius: 13px;
+
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-height: 1080px){
+    .bank_card_block {
+        position: absolute;
+        width: 1267px;
+        height: 719px;
+        left: calc(50% - 1267px/2 - 0.5px);
+        top: calc(50% - 719px/2 + 21px);
+
+        background: rgba(253, 146, 68, 1);
+    }
+    .bank_card_block input[type='submit']{
+        position: absolute;
+        width: 130px;
+        height: 60px;
+
+
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+        background: linear-gradient(180deg, #8D8F0A 0%, #F1F511 100%);
+        border-radius: 13px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+
+        color: #000000;
+
+    }
+
+    .bank_card_block .name-wallet {
+
+        position: absolute;
+        width: 216px;
+        height: 73px;
+        left: calc(50% - 216px/2 - 500px);
+        top: calc(50% - 73px/2 - 309.5px);
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+        background: #DFB158;
+        border-radius: 13px;
+
+    }
+    .bank_card_block .name-wallet h1{
+
+        position: absolute;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 77px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+
+        color: #000000;
+    }
+
+    .bank_card_block .count {
+
+        position: absolute;
+        width: 300px;
+        height: 600px;
+        left: calc(50% - 1196px/2 - 0.5px);
+        top: calc(50% - 524px/2 + 0.5px);
+
+        background: #F9F9F9;
+        border-radius: 13px;
+
+    }
+
+    .bank_card_block p {
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .bank_card_block .add_card {
+
+        position: absolute;
+        width: 860px;
+        height: 600px;
+        left: calc(50% - 985px/2 + 230.5px);
+        top: calc(50% - 524px/2 + 0.5px);
+
+        background: #DC700D;
+        border-radius: 13px;
+
+    }
+
+    .bank_card_block .add_card input{
+        position: absolute;
+        width: 400px;
+        height: 94px;
+
+        background: #D9D9D9;
+        border-radius: 13px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+    }
+
+    .input_name{
+        left: calc(50% - 469px/2 - 180px);
+        top: calc(50% - 94px/2 - 240px);
+    }
+    .input_surname{
+        left: calc(50% - 469px/2 + 250px);
+        top: calc(50% - 94px/2 - 240px);
+    }
+    .input_number{
+        left: calc(50% - 469px/2 - 180px);
+        top: calc(50% - 94px/2 - 130px);
+    }
+    .input_cvv{
+        left: calc(50% - 469px/2 + 250px);
+        top: calc(50% - 94px/2 - 130px);
+    }
+    .input_date{
+        left: calc(50% - 469px/2 - 180px);
+        top: calc(50% - 97px/2 - 20px);
+    }
+
+    .bank_card_block .add_card .add_btn {
+
+        position: absolute;
+        width: 400px;
+        height: 97px;
+        left: calc(50% - 469px/2 + 250px);
+        top: calc(50% - 97px/2 - 20px);
+
+        background: linear-gradient(180deg, #BC950C 0%, #DEA40F 99%);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+
+        color: #000000;
+
+    }
+
+    .interface_get_send{
+
+        position: absolute;
+        width: 1000px;
+        height: 83px;
+        left: calc(50% - 1230px/2 + 230px);
+        top: calc(50% - 83px/2 - 310px);
+
+        background: #DC700D;
+        border-radius: 13px;
+
+    }
+
+    .interface_get_send .money_counter{
+
+        position: absolute;
+        width: 155px;
+        height: 61px;
+        left: calc(50% - 173px/2 - 400px);
+        top: 10px;
+
+        background: #FFE600;
+        border-radius: 13px;
+
+    }
+
+    .interface_get_send .money_counter h1{
+
+        position: absolute;
+        width: 175px;
+        height: 63px;
+        left: 10px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+
+        color: #000000;
+
+    }
+        .interface_get_send .send_btn{
+        top: 10px;
+        left: calc(50% - 272px/2 + 490px);
+    }
+
+    .interface_get_send .get_btn{
+        top: 10px;
+        left: calc(50% - 272px/2 + 80px);
+    }
+
+    .interface_get_send .send_int{
+
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 272px/2 + 220px);
+        width: 260px;
+        height: 62px;
+        border-radius: 13px;
+        background: #D9D9D9;
+
+    }
+    .interface_get_send .get_int{
+
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 272px/2 - 190px);
+        width: 260px;
+        height: 62px;
+        border-radius: 13px;
+        background: #D9D9D9;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+        transform-origin: top;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scale(1);
+        opacity: 1
+    }
+
+    nav a:first-child {
+        margin-top: 0;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+
+    .icon{
+        display: none;
+    }
+}

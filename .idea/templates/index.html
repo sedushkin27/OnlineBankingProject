@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleMainstay.css') }}">
+    <title>Bank Uitcoin</title>
+</head>
+<body>
+    <header class="wrapper">
+        <img class="icon" src="{{ url_for('static', filename='image/icon.png') }}">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/AboutUs">About us</a>
+            <a href="/Support" >Support</a>
+        </nav>
+
+        <div>
+          <button type="button" class="login_btn" id="login">Login</button>
+          <button type="button" class="registration_btn" id="registration">Sign-up</button>
+        </div>
+    </header>
+    <div class="text_wrapper">
+        {%block content%}{%endblock%}
+    </div>
+    <script>
+        document.querySelector('#login').onclick = function(){
+            document.location.replace('/Login');
+        }
+
+        document.querySelector('#registration').onclick = function(){
+            document.location.replace('/Registration');
+        }
+    </script>
+</body>
+</html>

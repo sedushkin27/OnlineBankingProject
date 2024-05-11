@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bank Uitcoin</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" method="post">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" name="email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="User nickname" name="usernickname" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="User name" name="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="User surname" name="surname" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="date" placeholder="date your birth day" name="birth-day"
+                       min="1800-01-01" max="2024-01-01" required>
+                <i class='bx bxs-calendar'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" placeholder="Phone number" name="number" required>
+                <i class='bx bxs-phone'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="password" name="password1" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="password repetition" name="password2" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="input-box-gender">
+                <p>gender:</p>
+                <input type="radio" name="gender" id="radio1" value="male">male<br>
+                <input type="radio" name="gender" id="radio2" value="female">female<br>
+                <input type="radio" name="gender" id="radio3" value="other">other<br>
+            </div>
+
+            <button type="submit" class="btn">Registration</button>
+
+            <div class="register-link">
+                <p>Do you have an account? <a href="/Login">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
